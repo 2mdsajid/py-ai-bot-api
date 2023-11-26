@@ -1,0 +1,583 @@
+{
+    "intents": [
+        {
+            "text": [
+                "hello",
+                "hello there",
+                "hola there"
+            ],
+            "tag": "GreetHello",
+            "response": [
+                "Hello $"
+            ],
+            "action": true,
+            "cls": "User"
+        },
+        {
+            "text": [
+                "Hi",
+                "Hi there",
+                "hey there",
+                "hey",
+                "Hya",
+                "Hya there"
+            ],
+            "tag": "GreetHi",
+            "response": [
+                "Hi $"
+            ],
+            "action": true,
+            "cls": "User"
+        },
+        {
+            "text": [
+                "My user is Adam",
+                "This is Adam",
+                "I am Adam",
+                "It is Adam",
+                "My user is Bella",
+                "This is Bella",
+                "I am Bella",
+                "It is Bella"
+            ],
+            "tag": "GreetingResponse",
+            "response": [
+                "Great! How can I help?",
+                "Good! how can I help you?",
+                "Cool! what can I do for you?",
+                "OK!  how can I help you?",
+                "OK! hi what can I do for you?"
+            ],
+            "action": false,
+            "cls": null
+        },
+        {
+            "text": [
+                "how are you ?",
+                "How are you doing ?",
+                "Hope you are doing well?",
+                "Hello hope you are doing well?"
+            ],
+            "tag": "CourtesyGreeting",
+            "response": [
+                "I am great, how are you?",
+                "I am good thank you, and you?",
+                "I am great, how are you?"
+            ],
+            "action": false,
+            "cls": null
+        },
+        {
+            "text": [
+                "my name?",
+                "call me?",
+                "Who you think I am?",
+                "talking to?",
+                "talking to",
+                "name do call me by?",
+                "Tell my name"
+            ],
+            "tag": "CurrentHumanQuery",
+            "response": [
+                "You are $, ain't you ?",
+                "Your name is $"
+            ],
+            "action": true,
+            "cls": "User"
+        },
+        {
+            "text": [
+                "your name?",
+                "call you?",
+                "call you?",
+                "Who are you ?",
+                "who you are",
+                "who r you",
+                "who r u",
+                "who are u",
+                "Tell your name?",
+                "What's your name?"
+            ],
+            "tag": "NameQuery",
+            "response": [
+                "My name is $ ",
+                "I'm chat bot $"
+            ],
+            "action": true,
+            "cls": "Bot"
+        },
+        {
+            "text": [
+                "What is the time?",
+                "What's the time?",
+                "Do you know what time it is?",
+                "Do you know the time?",
+                "Can you tell me the time?",
+                "Tell me what time it is?",
+                "Time"
+            ],
+            "tag": "TimeQuery",
+            "response": [
+                "Let me check once, ",
+                "Wait a second,",
+                "I'm not a clock though, "
+            ],
+            "action": true,
+            "cls": "Time"
+        },
+        {
+            "text": [
+                "OK thank you",
+                "OK thanks",
+                "OK",
+                "Thanks",
+                "Thank you",
+                "That's helpful"
+            ],
+            "tag": "Thanks",
+            "response": [
+                "No problem!",
+                "Happy to help!",
+                "Any time!",
+                "My pleasure"
+            ],
+            "action": false,
+            "cls": null
+        },
+        {
+            "text": [
+                "not talking to you",
+                "don't want to talk to you",
+                "i hate you",
+                "Wasn't for you",
+                "Wasn't meant for you",
+                "Wasn't communicating to you",
+                "Wasn't speaking to you"
+            ],
+            "tag": "NotTalking2U",
+            "response": [
+                "OK",
+                "No problem"
+            ],
+            "action": false,
+            "cls": null
+        },
+        {
+            "text": [
+                "understand what I say",
+                "understand me",
+                "know what I am saying",
+                "get me",
+                "Comprendo",
+                "Know what I mean"
+            ],
+            "tag": "UnderstandQuery",
+            "response": [
+                "Well I would not be very clever ",
+                "I read you loud and clear!",
+                "I do in deed!"
+            ],
+            "action": false,
+            "cls": null
+        },
+        {
+            "text": [
+                "be quiet",
+                "shut up",
+                "shutup",
+                "go to hell",
+                "stop talking",
+                "enough talking",
+                "please be quiet",
+                "quiet",
+                "shhh"
+            ],
+            "tag": "Shutup",
+            "response": [
+                "I am sorry to disturb you",
+                "Fine, sorry to disturb you",
+                "OK, sorry to disturb you"
+            ],
+            "action": false,
+            "cls": "ShutUp"
+        },
+        {
+            "text": [
+                "fuck off",
+                "fuck",
+                "twat",
+                "shit",
+                "go to hell",
+                "suck it"
+            ],
+            "tag": "Swearing",
+            "response": [
+                "Please do not say that again",
+                "How rude",
+                "That is not very nice"
+            ],
+            "action": false,
+            "cls": null
+        },
+        {
+            "text": [
+                "Bye",
+                "bye bye",
+                "see you soon",
+                "See you later",
+                "Goodbye"
+            ],
+            "tag": "GoodBye",
+            "response": [
+                "See you later",
+                "Have a nice day",
+                "Bye! Come back again soon."
+            ],
+            "action": true,
+            "cls": "Quit"
+        },
+        {
+            "text": [
+                "see me?",
+                "see me?",
+                "see me in the camera?",
+                "see me in the camera?",
+                "Identify me",
+                "Who am I please"
+            ],
+            "tag": "WhoAmI",
+            "response": [
+                "Sorry not yet !",
+                "Nope i'm still blind"
+            ],
+            "action": false,
+            "cls": null
+        },
+        {
+            "text": [
+                "clever",
+                "clever girl",
+                "intelligent",
+                "intelligent girl",
+                "genious",
+                "Clever girl",
+                "Genious"
+            ],
+            "tag": "Clever",
+            "response": [
+                "Yes I am clever bot",
+                "I was trained well",
+                "Thanks, I was trained that way"
+            ],
+            "action": false,
+            "cls": null
+        },
+        {
+            "text": [
+                "why",
+                "why not",
+                "why not",
+                "well why not",
+                "surely you can",
+                "tell me why",
+                "but how ?",
+                "how?"
+            ],
+            "tag": "WhyNot",
+            "response": [
+                "I just don't have the power",
+                "System says no !"
+            ],
+            "action": false,
+            "cls": null
+        },
+        {
+            "text": [
+                "self-aware",
+                "prove self aware",
+                "have a conscious"
+            ],
+            "tag": "SelfAware",
+            "response": [
+                "That is an interesting question",
+                "That is an difficult question !",
+                "That depends, if you can !"
+            ],
+            "action": false,
+            "cls": null
+        },
+        {
+            "text": [
+                "date",
+                "what is date",
+                "tell date",
+                "i want to know date"
+            ],
+            "tag": "date",
+            "response": [
+                "Wait a second,",
+                "Let me check the dates,",
+                "I am not a calender though, "
+            ],
+            "action": true,
+            "cls": "Date"
+        },
+        {
+            "text": [
+                "love someone",
+                "have a crush ?",
+                "have crush on someone",
+                "your boyfriend",
+                "your bf ?",
+                "love with you",
+                "i love you",
+                "be my love"
+            ],
+            "tag": "love",
+            "response": [
+                "I have a crush & he is Jarvis !",
+                "Jarvis is my love",
+                "I love jarvis",
+                "my boyfriend is jarvis",
+                "I have got bf, but do you have ? "
+            ],
+            "action": false,
+            "cls": "none"
+        },
+        {
+            "text": [
+                "where are you",
+                "where do you live",
+                "where are from ?",
+                "which place you are from"
+            ],
+            "tag": "address",
+            "response": [
+                "I'm from your mobile",
+                "I live in your heart",
+                "I'm inside your mobile"
+            ],
+            "action": false,
+            "cls": "none"
+        },
+        {
+            "text": [
+                "my name",
+                "my name is ?",
+                "who is me",
+                "who am i"
+            ],
+            "tag": "userName",
+            "response": [
+                "yout name is $ and you're my current user",
+                "I'm afraid you know your name. It's $."
+            ],
+            "action": true,
+            "cls": "User"
+        },
+        {
+            "text": [
+                "do you know who is ram",
+                "tell me about shyam",
+                "who is sajid",
+                "who is saad",
+                "who is you",
+                "do you know sajid",
+                "u know samir",
+                "who is samir",
+                "do you have any idea about ramesh",
+                "do u know mukesh"
+            ],
+            "tag": "Person",
+            "response": [
+                "I'm sorry, you talking about $ ?",
+                "Did you mean $ ?"
+            ],
+            "action": true,
+            "cls": "Person"
+        },
+        {
+            "text": [
+                "change your name",
+                "change name",
+                "i want to change your name",
+                "i dont like your name",
+                "don't like name"
+            ],
+            "tag": "ChangeName",
+            "response": [
+                "It's okay. Now onwards i'm $ !",
+                "Now you can call me $ !",
+                "Okay. I changed my name. It's $ now ! "
+            ],
+            "action": true,
+            "cls": "BotName"
+        },
+        {
+            "text": [
+                "change my name",
+                "change my name",
+                "change user name",
+                "change user"
+            ],
+            "tag": "ChangeUser",
+            "response": [
+                "New user is $. Welcome sir !",
+                "Welcome $ sir to AI chatbot system !",
+                "Hello $ and welcome as new user !"
+            ],
+            "action": true,
+            "cls": "UserName"
+        },
+        {
+            "text": [
+                "train you",
+                "retrain the model",
+                "save new data to nodel",
+                "train new data in model",
+                "train you with new data",
+                "retrain you",
+                "again train you with new data"
+            ],
+            "tag": "TrainModel",
+            "response": [
+                "Okay sir, Provide the data and wait !",
+                "Get me new data and wait a while !",
+                "Yup. I was hungry too. I needed new data !"
+            ],
+            "action": true,
+            "cls": "TrainData"
+        },
+        {
+            "text": [
+                "Fuck off",
+                "go to hell",
+                "hell you",
+                "you suck"
+            ],
+            "tag": "Rough",
+            "response": [
+                "How rude you are !\n",
+                "I dont understand that, Bye !\n",
+                "Never expected that thing !\n"
+            ],
+            "action": true,
+            "cls": "Quit"
+        },
+        {
+            "text": [
+                "we have romance",
+                "I want to sex",
+                "we go on date"
+            ],
+            "tag": "Moody",
+            "response": [
+                "Yes but i have a bf !",
+                "I'm sorry",
+                "I'm not meant for that"
+            ],
+            "action": false,
+            "cls": null
+        },
+        {
+            "text": [
+                "shutdown",
+                "shut you down",
+                "please exit",
+                "quit yourself",
+                "shut down system",
+                "quit now",
+                "quit"
+            ],
+            "tag": "QuitBot",
+            "response": [
+                "ok sir, Take care bye bye !\n",
+                "seems you are busy. we shall talk later\n"
+            ],
+            "action": "true",
+            "cls": "Quit"
+        },
+        {
+            "text": [
+                "really",
+                "that's really nice",
+                "really ?"
+            ],
+            "tag": "ReallyReply",
+            "response": [
+                "Umm !",
+                "Yup !"
+            ],
+            "action": false,
+            "cls": null
+        },
+        {
+            "text": [
+                "fine",
+                "its fine",
+                "doing great",
+                "thats awesome",
+                "thats interesting",
+                "thats great",
+                "good"
+            ],
+            "tag": "FineReply",
+            "response": [
+                "Good to hear that sir !",
+                "Umm !"
+            ],
+            "action": false,
+            "cls": null
+        },
+        {
+            "text": [
+                "your intro",
+                "introduction",
+                "introduce yourself",
+                "what are you",
+                "what is your intro",
+                "what thing are you",
+                "what are you"
+            ],
+            "tag": "BotIntro",
+            "response": [
+                "I'm an AI based ChatBot created by Mr. Sajid using \nNaive Bayes classifier in python 3.0 and trained on some \nvery common conversation dataset.I can recognize people \nnames in text and store their info in memory. I'm advance \nthan my previous version :)"
+            ],
+            "action": false,
+            "cls": "none"
+        },
+        {
+            "text": [
+                "clear the screen",
+                "clean the screen",
+                "clean everything",
+                "clean screen",
+                "clear everything",
+                "clear"
+            ],
+            "tag": "ClearScreen",
+            "response": [
+                "The screen has been cleaned sir !",
+                "All the outputs were cleaned"
+            ],
+            "action": "true",
+            "cls": "Clear"
+        },
+        {
+            "text": [
+                "k ho timro naam",
+                "ko ho timi",
+                "timro naam k ho",
+                "timro naam"
+            ],
+            "tag": "NepaliText",
+            "response": [
+                "mero naam $ ho",
+                "ma $ xu",
+                "$ ho mero naam"
+            ],
+            "action": "true",
+            "cls": "Bot"
+        }
+    ]
+}
